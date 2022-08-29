@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dog Photo App</title>
+    </head>
+    <body>
+        <main>
+            <section>
+        <h1>Dog Photo App</h1>
+        <h2>Dog Photos</h2>
+        <p>Click here to view more<a target="_blank" href="https://unsplash.com/s/photos/dogs"> dog photos.</a></p>
+        <img src=dog1.jpg alt="dog" height="399px">
+    </section>
+    <section>
+        <h2>Dog Lists</h2>
+        <p>
+            <h3>Things Dog Love:</h3>
+        </p>
+        <ul>
+            <li>Playdate. Much like humans, dogs are social animals who need time with others.</li>
+            <li>Fetch. The all-time favorite game for dogs and their humans</li>
+            <li>Dog Park. If your area has a dog park, you can take your (hopefully) socialized dog to the park and let them run with other socialized pups</li>
+        </ul>
+        <figure>
+            <img src="dog2.png" alt="pedigree" height="399px"></figure>
+            <figcaption>Dogs love <em>Pedigree</em></figcaption>
+    </section>
+    <section>
+        <h2>Top three things dogs hate:</h2>
+        <ol>
+            <li>Being ignored</li>
+            <li>Scary fireworks</li>
+            <li>Having their bone taken away</li>
+        </ol>
+        <figure>
+            <img src="dog3.jpg" alt="puppies" height="399px" width="650px">
+        <figcaption>Dogs <strong>love</strong> to play</figcaption></figure>
+    </section>
+    <section>
+        <h2><strong>Dog Form</strong></h2>
+        <form action="">
+            <fieldset>
+                <legend>
+                    Is your dog an indoor or outdoor dog?
+                </legend>
+                <label>
+                    <input type="radio" name="indoor-outdoor" value="indoor" checked>Indoor
+                </label>
+                <label>
+                    <input type="radio" name="indoor-outdoor" value="outdoor">Outdoor
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>What is your dog's personality?
+                </legend>       
+                        <input id="loving" type="checkbox" name="personality" value="loving" checked> 
+                        <label for="loving">Loving</label>
+                        <input id="lazy" type="checkbox" name="personality" value="lazy"> 
+                        <label for="lazy">Lazy</label>
+                        <input id="talented" type="checkbox" name="personality" value="talented"> 
+                        <label for="talented">Talanted</label>
+            </fieldset>
+            <input type="text" name="dogphotourl" value="paste URL here" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>No copyright-<a href="">www.souranshudoglover.com </a></p>
+</footer>
+</body>
+</html>

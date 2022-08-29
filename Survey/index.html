@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title >freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label id="name-label">Full Name: <input type="text" name="first-name" required id="name" placeholder="name"/></label>
+        <label id="email-label">Email: <input type="email" name="last-name" required id="email" placeholder="email"/></label>
+        <label id="number-label">Age: <input type="number" name="age" required id="number" min="13" max="120" placeholder="age"/></label>
+        <label>Which option best describes your current role?
+            <select name="referrer" id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Challenges</option>
+              <option value="2">Projects</option>
+              <option value="3">Community</option>
+              <option value="4">Open source</option>
+            </select>
+      </fieldset>
+      <fieldset>    
+            <label><input type="radio" name="account-type" class="inline" value="99"/> Personal Account</label>
+            <label><input type="radio" name="account-type" class="inline" value="88"/> Business Account</label>
+      </fieldset>
+      <fieldset><label>
+        <label>What would you like to see improved? (Check all that apply)</label>
+        <label><input type="checkbox" name="terms" class="inline" value="11"> Front-end Projects</label>
+        <label><input type="checkbox" name="terms" class="inline" value="12"> Back-end Projects</label>
+        <label><input type="checkbox" name="terms" class="inline" value="12"> Data Visualization</label>
+        <label><input type="checkbox" name="terms" class="inline" value="12"> Challeng</label>
+        <label><input type="checkbox" name="terms" class="inline" value="12"> Open Source Community</label>
+        <label><input type="checkbox" name="terms" class="inline" value="12"> Gitter help rooms</label>
+        <label><input type="checkbox" name="terms" class="inline" value="12"> Videos</label>
+        <label><input type="checkbox" name="terms" class="inline" value="12"> City Meetups</label>
+        <label><input type="checkbox" name="terms" class="inline" value="12"> Wiki</label>
+        <label><input type="checkbox" name="terms" class="inline" value="12"> Additional Courses</label>
+      </label></fieldset>
+        </label>
+        <label>Any comments or suggestions?
+          <textarea name="comments" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
