@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Windows Terminal</header>
+      <ul>
+        <li><a class="nav-link" href="#What_is_Windows_Terminal?">What is Windows Terminal?</a></li>
+        <li>
+          <a class="nav-link" href="#Multiple_profiles_supporting_a_variety_of_command_line_applications">Multiple profiles supporting a variety of command line applications</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Customized_schemes_and_configurations">Customized schemes and configurations</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Custom_actions">Custom actions</a></li>
+        <li><a class="nav-link" href="#Unicode_and_UTF-8_character_support">Unicode and UTF-8 character support</a></li>
+        <li>
+          <a class="nav-link" href="#GPU_accelerated_text_rendering">GPU accelerated text rendering</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Background_image_support">Background image support</a></li>
+        <li>
+          <a class="nav-link" href="#Command_line_arguments">Command line arguments</a>
+        </li>
+        <li><a class="nav-link" href="#Command_to_push_your_Codes_to_Github">Command to push your Codes to Github
+        </a></li>
+        <li><a class="nav-link" href="#Recommended_content">Recommended content
+        </a></li>
+        
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_Windows_Terminal?">
+        <header>What is Windows Terminal?</header>
+        <article>
+          <p>
+            Windows Terminal is a modern host application for the command-line shells you already love, 
+            like Command Prompt, PowerShell, and bash (via Windows Subsystem for Linux (WSL)). 
+            Its main features include multiple tabs, panes, Unicode and UTF-8 character support, 
+            a GPU accelerated text rendering engine, and the ability to create your own themes 
+            and customize text, colors, backgrounds, and shortcuts.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Multiple_profiles_supporting_a_variety_of_command_line_applications">
+        <header>Multiple profiles supporting a variety of command line applications</header>
+        <article>
+          <p>Any application that has a command line interface can be run inside Windows Terminal. 
+            This includes everything from PowerShell and Command Prompt to Azure Cloud Shell 
+            and any WSL distribution such as Ubuntu or Oh-My-Zsh.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Customized_schemes_and_configurations">
+        <header>Customized schemes and configurations</header>
+        <article>
+          <p>
+            You can configure your Windows Terminal to have a variety of color schemes and settings. 
+            To learn how to make your own color scheme, visit the <a href="http://https://docs.microsoft.com/en-us/windows/terminal/customize-settings/color-schemes">Color schemes page</a>. 
+            You can also find custom Terminal configurations in the <a href="https://docs.microsoft.com/en-us/windows/terminal/custom-terminal-gallery/powerline-in-powershell">Custom terminal gallery</a>.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Custom_actions">
+        <header>Custom actions</header>
+        <article>
+          <p>There are a variety of custom commands you can use in Windows Terminal 
+            to have it feel more natural to you. If you don't like a particular keyboard shortcut,
+             you can change it to whatever you prefer.
+
+            For example, the default shortcut to copy text from the command 
+            line is <kbd>ctrl+shift+c</kbd>. You can change this to <kbd>ctrl+1</kbd> or whatever you prefer. 
+            To open a new tab, the default shortcut is <kbd>ctrl+shift+t</kbd>, 
+            but maybe you want to change this to <kbd>ctrl+2</kbd>. 
+            The default shortcut to flip between the tabs you have open is <kbd>ctrl+tab</kbd>, 
+            this could be changed to <kbd>ctrl+-</kbd> and used to create a new tab instead.
+            
+            You can learn about customizing shortcuts on the <a href="http://https://docs.microsoft.com/en-us/windows/terminal/customize-settings/actions">Actions page</a>.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Unicode_and_UTF-8_character_support">
+        <header>Unicode and UTF-8 character support</header>
+        <article>
+        <p>
+            As of Windows Terminal version 1.4, the keybindings array has been renamed to 
+            actions inside the settings.json file. Support for the keybindings array still 
+            exists for backward compatibility, however the terminal will not automatically 
+            rename keybindings to actions inside your settings.json file.
+        </p>
+        <p>
+            You can create custom actions inside Windows Terminal that give you control of how
+             you interact with the terminal. These actions will automatically be added to the command palette.
+
+
+        </p>
+    </article>
+      </section>
+      <section class="main-section" id="GPU_accelerated_text_rendering">
+        <header>GPU accelerated text rendering</header>
+        <article>
+          <p>
+            Windows Terminal can display Unicode and UTF-8 characters such as emoji 
+            and characters from a variety of languages.
+          </p>
+          <p>
+            Windows Terminal uses the GPU to render its text, thus providing improved performance 
+            over the default Windows command line experience.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Background_image_support">
+        <header>Background image support</header>
+        <article>
+          <p>
+            You can have background images and gifs inside your Windows Terminal window. 
+            Information on how to add background images to your profile can be found on 
+            the Profile - Appearance page.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Command_line_arguments">
+        <header>Command line arguments</header>
+        <article>
+          <p>
+            You can set Windows Terminal to launch in a specific configuration using command line arguments. 
+            You can specify which profile to open in a new tab, which folder directory should be selected, 
+            open the terminal with split window panes, and choose which tab should be in focus.</p>
+
+<p>For example, to open Windows Terminal from PowerShell with three panes, 
+with the left pane running a Command Prompt profile and the right pane split 
+between your PowerShell and your default profile running WSL, enter:</p>
+          <code>wt -p "Command Prompt" `; split-pane -p "Windows PowerShell" `; split-pane -H wsl.exe;</code>
+        </article>
+      </section>
+      <section class="main-section" id="Command_to_push_your_Codes_to_Github">
+        <header>Command to push your Codes to Github</header>
+        <article>
+          <p>First, you'll need to install and enable Git on your local machine.
+            Now, open Terminal on your Linux or Mac machine (use Bash on Windows).
+            Use the <code>cd</code> command to switch to the directory you want to push to the GitHub repository. 
+            Then, start the Git process by typing the following command.</p>
+             <code>git init</code>
+             <p>Next, you'll make your first commit saying that the git process has been initiated.Next,
+               you'll make your first commit saying that the git process has been initiated.</p>
+               <code>git commit -m "first commit"</code>
+               <p>You've just committed the first Git code locally. Now you'll take it up to your GitHub repo.
+
+                Remember the URL of the project? Insert it in the following command and remember to add 
+                <code>.git</code> at the end. Before the URL, you'll also want to enter a nickname for the repository 
+                so it becomes easier to push to it in the future.</p>
+                <code>git remote add 'project nickname' 'project URL'.git</code>
+                <p>Next, see if it worked by using the following command.</p>
+
+                  <code>git remote</code>
+                  <p>>
+                  You can also use the <code>-v</code> or <code>--verbose </code>command, which will print the URL, so you can verify not only that the remote was created, but also that the URL is correct.
+                  
+                  You'll see the details of the linked repository.</p>
+                  <p>Now, connect the remote repository to the local directory by entering the following command.</p>
+                  <code>git pull origin master</code>
+                  <p>Now you can push the contents of the directory to the GitHub repository using the following command.</p>
+                  <code>git push -u 'project nickname' master</code>
+                  <p>This will take all the files and folders from the directory and upload them to the repository. But before it can do that, GitHub needs to authenticate your identity, so you'll need to enter your GitHub username and password. Once the authentication is done, the upload process will start. In a minute or two, you'll see specific details about where the data was uploaded.
+
+                    And that's it: You've successfully pushed your local files and folders to your GitHub repository.</p>
+
+          
+        </article>
+      </section>
+      <section class="main-section" id="Recommended_content">
+        <header>Recommended content</header>
+        <article>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/windows/terminal/customize-settings/profile-general?source=recommendations">Windows Terminal General Profile Settings</a></li>
+              
+              <li><a href="https://docs.microsoft.com/en-us/windows/terminal/customize-settings/startup?source=recommendations">Windows Terminal Sturtup Settings</a></li>
+              
+              <li><a href="https://docs.microsoft.com/en-us/windows/terminal/customize-settings/color-schemes?source=recommendations">Windows Terminal Color Scheme Settings</a></li>
+              
+              <li><a href="https://docs.microsoft.com/en-us/windows/terminal/tips-and-tricks?source=recommendations">Windows Terminal Tips and Tricks Settings</a></li>
+              
+              <li><a href="https://docs.microsoft.com/en-us/windows/terminal/customize-settings/profile-appearance?source=recommendations">Windows Terminal Apearence Profile Settings</a></li>
+              
+              <li><a href="https://docs.microsoft.com/en-us/windows/terminal/customize-settings/actions?source=recommendations">Windows Terminal Action Settings</a></li>
+              
+              <li><a href="https://docs.microsoft.com/en-us/windows/terminal/troubleshooting?source=recommendations">Windows Terminal Troubleshooting Settings</a></li>
+              
+              <li><a href="https://docs.microsoft.com/en-us/windows/terminal/customize-settings/profile-advanced?source=recommendations">Windows Terminal Advanced Profile Settings</a></li>
+              
+            </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+        <p>
+              All the documentation in this page is taken from
+              <a
+                href="https://docs.microsoft.com/en-us/windows/terminal/"
+                target="_blank">Microsoft</a></p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
