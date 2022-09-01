@@ -1,13 +1,13 @@
 :root {
-    --building-color1: #aa80ff;
-    --building-color2: #66cc99;
-    --building-color3: #cc6699;
-    --building-color4: #538cc6;
-    --window-color1: #bb99ff;
-    --window-color2: #8cd9b3;
-    --window-color3: #d98cb3;
-    --window-color4: #8cb3d9;
-  }
+    --building-color1: #000;
+    --building-color2: #000;
+    --building-color3: #000;
+    --building-color4: #000;
+    --window-color1: #777;
+      --window-color2:#777 ;
+      --window-color3: #777;
+      --window-color4: #777;
+    }
   
   * {
     box-sizing: border-box;
@@ -40,18 +40,17 @@
     align-items: center;
     justify-content: space-evenly;
   }
-  .sky{
+  
+  .sky {
     background: radial-gradient(
-      circle closest-corner at 15% 15%,
-      #ffcf33 0%,
-      #ffcf33 20%,
-      #ffff66 21%,
-      #bbeeff 100%
-  
-  
-  
-    );
+        closest-corner circle at 15% 15%,
+        #ccc,
+        #ccc 20%,
+        #445 21%,
+        #223 100%
+      );
   }
+  
   /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
   .bb1 {
     width: 10%;
@@ -297,6 +296,26 @@
         var(--window-color3) 30%
       );
   }
-  @media (max-width: 1000px) {
   
+  @media (max-width: 1000px) {
+    :root {
+      --building-color1: #000;
+      --building-color2: #000;
+      --building-color3: #000;
+      --building-color4: #000;
+      --window-color1: #777;
+      --window-color2:#777 ;
+      --window-color3: #777;
+      --window-color4: #777;
+    }
+    .sky {
+        background: radial-gradient(
+            closest-corner circle at 15% 15%,
+            #ccc,
+            #ccc 20%,
+            #445 21%,
+            #223 100%
+        );
+    }
   }
+      
