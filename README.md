@@ -1,4 +1,3 @@
-# Hello guys i am here to share my progress with you that i had learn from Freecodecamp(www.freecodecamp.org)
-#Use the below link and after slash paste the project name and again slash and press enter to host projects e.g.-(https://devssoc.github.io/freecodecamp/project-name/)
+#certificate link- https://www.freecodecamp.org/certification/dev-s-soc/responsive-web-design
 
 
